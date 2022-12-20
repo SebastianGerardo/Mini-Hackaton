@@ -15,6 +15,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .our-creations{
     width: 100%;
@@ -151,3 +153,58 @@ footer{
     font-weight: lighter;
     padding-bottom: 2px;;
 }
+
+/* Parte Sebastian Gerardo */
+
+body {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .about-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-2 {
+    width: 70%;
+    display: flex;
+    position: relative;
+  }
+  
+  .img-interactive {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .description {
+    background-color: #ffffff;
+    height: 19em;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    text-align: start;
+    padding-top: 5em;
+    padding-left: 5em;
+  }
+  
+  .description h1 {
+    margin-bottom: 0.5em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  .description p {
+    line-height: 25px;
+    font-size: 15px;
+    color: hsl(0, 0%, 55%);
+  }
+  
