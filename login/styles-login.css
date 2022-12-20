@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Alata', cursive;
+    background: rgb(30,24,65);
+    background: radial-gradient(circle, rgba(30,24,65,1) 11%, rgba(127,37,83,1) 96%);
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+}
+picture img{
+    width: 15em;
+    filter:invert();
+}
+
+.inputs{
+    position: relative;
+
+}
+.inputs span{
+    position: absolute;
+    left: 90%;
+    top: 2em;
+    /* transform: translate(-50%, -50%); */
+}
+
+.icons img{
+    width: 1.3em;
+    opacity: 0.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+.container li input{
+    margin-right: 0.5em;
+}
+
+
+.form {
+    padding: 4em 3em ;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.304);
+    border: none;
+    color: #fff;
+    width: 20em;
+}
+
+.input-form {
+    margin-top: 20px;
+    padding: 1em;
+    width: 90%;
+    border: solid 2px #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background-color: #1e1841;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: ease-out 0.5s;
+}
+
+.btn-primary:active {
+    background-color: #7f2538;
+}
+
+.forgot-password a{
+    text-decoration: none;
+    color: #fff
+}
+
+.forgot-password a:hover{
+    color:#7f2538;
+    transition: ease-out 0.3s;
+}

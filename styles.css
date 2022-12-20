@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap%27');
+
 *{
     margin: 0;
     padding: 0;
 }
+
+/* body {
+    width: 100%;
+    height: 100vh;
+  } */
+
+
 /**/
 /*Eduardo*/
 /**/
@@ -12,19 +21,24 @@ header {
     height: 8.43%;
     width: 100%;
     display: flex;
-    background-image: url(./images/image-hero.jpg);
+    background-image: url(./images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    justify-content: start;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    font-family: 'Alata', sans-serif;
+    align-items: center;
 }
 
 .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    height: 9em;
 }
 
 .logo span {
@@ -40,16 +54,16 @@ header {
 .logo {
     width: 13.9rem;
     height: 6.9rem;
-    margin-top: 2.6rem;
-    margin-left: 4rem;
+    margin-left: 0;
     margin-right: auto;
     margin-bottom: 2.3rem;
-    font-family: 'Alata', cursive;
+    font-family: 'Alata', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 2.2rem;
     line-height: 6.9rem;
     color: #fff;
+    font-weight: bolder;
 }
 
 .nav {
@@ -64,7 +78,7 @@ header {
     width: 50.7rem;
     width: 50%;
     height: 2.8rem;
-    margin-top: 4.5rem;
+    margin-top: 4rem;
     margin-right: 2rem;
     margin-bottom: 4.5rem;
     padding-right: 2rem;
@@ -83,27 +97,34 @@ header {
 .nav .nav-list {
     display: flex;
     padding: 0;
+    margin-left:0.2em;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     cursor: pointer;
     color: #fff;
     text-decoration: none;
+
 }
 
 .nav-items:hover {
+    font-weight: bolder;
     text-decoration: underline;
 }
-/*.nav-items::after {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
+
+header .login{
+    color:#fff;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: #7f2538;
+    padding: 0.3em 1em;
+    border-radius: 8px;
 }
-.nav-items:hover:after {
-}*/
+
+header .login:hover{
+    text-decoration: none;
+
+}
+
 
 nav-item li {
     display: list-item;
@@ -121,22 +142,29 @@ header .presentacion {
     border-radius: 8px;
 }
 
+.titulo{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    max-width: 1024px;  
+}
 .titulo p {
-    font-size: xx-large;
+    font-size: 3em;
     display: block;
-    margin-block-start: 5em;
-    margin-block-end: 5em;
-    margin-inline-start: 68px;
+    margin-block-start: 0;
+    margin-block-end: 2em;
+    margin-inline-start: 0;
     margin-inline-end: 0px;
     color: #fff;
     text-transform: uppercase;
     border: 1px solid #fff;
-    padding: 0.7em;
-    width: 35%;
-    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.5em;
+    width: 30%;
+    min-width: 400px;
+    font-family: 'Alanta', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 300;
 }
-
-
 /*HEADER*/
 
 
@@ -155,6 +183,57 @@ header .presentacion {
     flex-direction: column;
     align-items: center;
 }
+
+
+/* Parte Sebastian Gerardo */
+
+.about-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-2 {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .img-interactive {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .description {
+    background-color: #ffffff;
+    height: 19em;
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    text-align: start;
+    padding-top: 5em;
+    padding-left: 5em;
+  }
+  
+  .description h1 {
+    margin-bottom: 0.5em;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  .description p {
+    line-height: 25px;
+    font-size: 15px;
+    color: hsl(0, 0%, 55%);
+  }
+  
 .our-creations{
     width: 100%;
     max-width: 1024px;
@@ -170,6 +249,7 @@ header .presentacion {
     color: #000;
     border: 1px solid #000;
     padding: 8px 30px;
+    cursor: pointer;
 }
 .btn-seeall:active{
     background-color: #000;
@@ -190,7 +270,16 @@ header .presentacion {
 }
 .card-img img{
     width: 220px;
+    cursor: pointer;
 }
+.card-img img:active + h3{
+    color: #000;
+}
+
+.card-img img:active{
+    opacity: 0.3;
+}
+
 .card-img h3{
     width: 100px;
     position: absolute;
@@ -200,6 +289,7 @@ header .presentacion {
     font-family: 'Josefin Sans', sans-serif;
     font-size:20px;
 }
+
 
 @media screen and (max-width: 1000px) {
     .our-creations{
@@ -244,27 +334,38 @@ footer{
     background-color: #000;
     color: #fff;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 2rem 5rem 0 5rem;
+    padding: 2rem 5rem 3em 5rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
+.footer-content{
+    width: 100%;
+    max-width: 1024px;
 
+}
 .upper-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .upper-footer p{
-    font-size: 1.5em;
+    font-size: 2.3em;
     font-weight: bolder;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
 }
 
 .container-icons img{
     padding: 0.5rem 0.5rem;
-    width: 10%;
+    width: 12%;
+    cursor: pointer;
+    border-bottom: 3px solid #000;
 }
+.container-icons img:hover{
+    border-bottom: 3px solid #fff;
 
+}
 
 .botton-footer{
     display: flex;
@@ -274,7 +375,6 @@ footer{
 
 .botton-footer nav ul{
     display: flex;
-
 }
 
 .botton-footer ul{
@@ -283,65 +383,17 @@ footer{
 }
 
 .botton-footer li{
-    padding: 1em
+    margin: 1rem 1.5rem 1rem 0;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
 }
 
+.botton-footer li:hover{
+    border-bottom: 3px solid #fff;
+}
 .botton-footer p{
-    font-weight: lighter;
-    padding-bottom: 2px;;
+    font-weight: bold;
+    padding-bottom: 2px;
+    opacity: 0.8;
+
 }
-
-/* Parte Sebastian Gerardo */
-
-body {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .about-us {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-us-2 {
-    width: 70%;
-    display: flex;
-    position: relative;
-  }
-  
-  .img-interactive {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      flex-wrap: wrap;
-  }
-  
-  .description {
-    background-color: #ffffff;
-    height: 19em;
-    position: absolute;
-    top: 40%;
-    left: 53%;
-    text-align: start;
-    padding-top: 5em;
-    padding-left: 5em;
-  }
-  
-  .description h1 {
-    margin-bottom: 0.5em;
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
-    font-size: 50px;
-    text-transform: uppercase;
-  }
-  
-  .description p {
-    line-height: 25px;
-    font-size: 15px;
-    color: hsl(0, 0%, 55%);
-  }
-  
