@@ -3,6 +3,143 @@
     margin: 0;
     padding: 0;
 }
+/**/
+/*Eduardo*/
+/**/
+
+/*HEADER*/
+header {
+    height: 8.43%;
+    width: 100%;
+    display: flex;
+    background-image: url(./images/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 13.9rem;
+    height: 6.9rem;
+    margin-top: 2.6rem;
+    margin-left: 4rem;
+    margin-right: auto;
+    margin-bottom: 2.3rem;
+    font-family: 'Alata', cursive;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.2rem;
+    line-height: 6.9rem;
+    color: #fff;
+}
+
+.nav {
+    display: block;
+    width: 70%;
+    height: 2.8rem;
+    margin: auto 0;
+    margin-left: 20px;
+}
+
+.nav {
+    width: 50.7rem;
+    width: 50%;
+    height: 2.8rem;
+    margin-top: 4.5rem;
+    margin-right: 2rem;
+    margin-bottom: 4.5rem;
+    padding-right: 2rem;
+}
+
+.nav-list ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.nav .nav-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-items:hover {
+    text-decoration: underline;
+}
+/*.nav-items::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+.nav-items:hover:after {
+}*/
+
+nav-item li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+header .presentacion {
+    width: 320px;
+    font-size: 35px;
+    color: white;
+    background-color: #729afe7e;
+    padding: 15px;
+    margin-left: 10%;
+    margin-bottom: 15%;
+    border-radius: 8px;
+}
+
+.titulo p {
+    font-size: xx-large;
+    display: block;
+    margin-block-start: 5em;
+    margin-block-end: 5em;
+    margin-inline-start: 68px;
+    margin-inline-end: 0px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    padding: 0.7em;
+    width: 35%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*HEADER*/
+
+
 
 
 /* *********** */
